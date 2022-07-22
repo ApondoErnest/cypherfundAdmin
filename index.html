@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!--Top Menu & Menu button-->
+           <div class="sidebar">
+               <div class="profile">
+                   <!--Profile Image-->
+                    <img src="vector_avatar.png" alt="">
+
+                   <!--Profile Title & Descruption-->
+                   <h3>Admin  Name</h3>
+                   <p>Administrator</p>
+               </div>
+
+               <ul>
+                <li>
+                    <a href="#" class="menulinks" onclick="openContent(event, 'Home')" id="defaultSelect">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menulinks" onclick="openContent(event, 'addTask')">
+                        <span class="icon"><i class="fas fa-plus-square"></i></span>
+                        <span class="item">Add Task</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menulinks" onclick="openContent(event, 'activeTask')">
+                        <span class="icon"><i class="fas fa-check-square"></i></span>
+                        <span class="item">Active Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menulinks" onclick="openContent(event, 'domore')">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">More</span>
+                    </a>
+                </li>
+                <a href="#" class="menulinks" onclick="openContent(event, 'domore')">
+                <li>
+                        <span class="icon"><i class="fas fa-history"></i></span>
+                        <span class="item">History</span>
+                    </a>
+                </li>
+               </ul>
+               <p class="logout-btn">
+                <a href="#" title="Logout"><i class="fas fa-power-off"></i></a>
+               </p>
+                <!--Menu item-->
+          </div> 
+          <!--------------------------Main Container------------------------------>
+          <div class="main-container">
+                <div class="top_navbar">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <a href="#" class="logout-top">Logout</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="container menucontent" id="Home">
+                    <h3>Home</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div id="addTask" class="menucontent">
+                    <h3>Add Tasks</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quas velit, 
+                        enim a tempora aperiam incidunt possimus, pariatur unde rem ex, consequuntur odit.
+                         Neque, sed?</p>
+                  </div>
+                  
+                  <div id="activeTask" class="menucontent">
+                    <h3>Active Tasks</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consectetur
+                         voluptatibus recusandae dolorem fugiat tempora, praesentium repudiandae 
+                         quisquam velit consequuntur!</p> 
+                    <img src="pngtree-user-vector-avatar-png-image_4830521.jpg" alt="">
+                  </div>
+                  
+                  <div id="domore" class="menucontent">
+                    <h3>More</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Cum fugit repudiandae reprehenderit, sapiente porro odio!</p>
+                  </div>
+            </div>
+          
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>

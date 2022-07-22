@@ -1,0 +1,163 @@
+
+/*Import Lato Fonts thin 100, light 300, and regular 400*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+:root {
+    --primary-color: rgb (244, 71, 107,);
+    --secondary-color: rgb(82, 61, 61);
+}
+
+/**********************************All elements*********************************/
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+}
+
+/**********************************Side menu Wrapper*********************************/
+
+.wrapper .sidebar {
+    background: rgba(244, 71, 107, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+	display: block;
+	width: 100px;
+    border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3 {
+    color: #FFF;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p {
+    color: var(--secondary-color); /*color: rgb(206, 240, 253);*/
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid rgba(82, 61, 61, 0.4);
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon {
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: var(--secondary-color);
+	background:white;
+    border-right: 2px solid var(--secondary-color);
+}
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: var(--secondary-color);
+}
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .sidebar .logout-btn {
+    background: rgba(82, 61, 61, 0.3);
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.wrapper .sidebar .logout-btn a {
+    margin: auto 50%;
+}
+
+.wrapper .sidebar .logout-btn a i {
+    color: #FFF;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.wrapper .sidebar .logout-btn:hover {
+    background: rgba(82, 61, 61, 0.5);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.wrapper .sidebar .logout-btn a i:hover 
+{
+    color: #dee4ec;
+}
+
+/**********************************Main container*********************************/
+
+.wrapper .main-container{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .main-container .top_navbar{
+	background: rgba(244, 71, 107, 0.5);
+	height: 60px;
+	display: flex;
+	align-items: c1enter;
+    justify-content: flex-end;
+	padding: 0 30px;
+ 
+}
+.wrapper .main-container .top_navbar .hamburger a{
+	font-size: 22px;
+	color: #f4fbff;
+    display: block;
+}
+
+.wrapper .main-container .top_navbar .hamburger a .fa-user{
+    margin-top: 8px; 
+}
+
+.wrapper .main-container .top_navbar .hamburger a:nth-child(2){
+    display: none; 
+}
+
+.wrapper .main-container .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+.wrapper .main-container .top_navbar .hamburger a .fa-user:hover a:nth-child(2){
+    display: block;
+}
+
+.wrapper .main-container .container {
+    margin: 30px;
+    padding: 50px;
+    line-height: 28px;
+    background: #FFF;
+}

@@ -19,13 +19,3 @@ function openContent(evt, content) {
   
   // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultSelect").click();  
-
-let logoutTop = document.querySelector('.fa-user');
-
-logoutTop.addEventListener('mouseover', () => {
-    document.querySelector('.wrapper .main-container .top_navbar .hamburger a:nth-child(2)').style.display = 'block';
-});
-
-logoutTop.addEventListener('mouseleave', () => {
-    document.querySelector('.wrapper .main-container .top_navbar .hamburger a:nth-child(2)').style.display = 'none';
-});

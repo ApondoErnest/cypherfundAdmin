@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
 :root {
-    --primary-color: rgb (244, 71, 107,);
+    --primary-color: rgb(244, 71, 107);
     --secondary-color: rgb(82, 61, 61);
 }
 
@@ -128,31 +128,36 @@ body {
 	background: rgba(244, 71, 107, 0.5);
 	height: 60px;
 	display: flex;
-	align-items: c1enter;
+	align-items: center;
     justify-content: flex-end;
 	padding: 0 30px;
  
 }
 .wrapper .main-container .top_navbar .hamburger a{
 	font-size: 22px;
-	color: #f4fbff;
-    display: block;
+	color: var(--secondary-color);
+    display: inline;
 }
 
 .wrapper .main-container .top_navbar .hamburger a .fa-user{
     margin-top: 8px; 
 }
 
-.wrapper .main-container .top_navbar .hamburger a:nth-child(2){
+.wrapper .main-container .top_navbar .hamburger .logout-top{
     display: none; 
 }
 
 .wrapper .main-container .top_navbar .hamburger a:hover{
-	color: #a2ecff;
+    margin: 3px;
 }
 
-.wrapper .main-container .top_navbar .hamburger a .fa-user:hover a:nth-child(2){
-    display: block;
+.wrapper .main-container .top_navbar .hamburger:hover .logout-top{
+    display: inline;
+    color: var(--secondary-color);
+    border: 1px solid rgba(82, 61, 61, 0.1);;
+    font-size: 15px;
+    padding: 3px;
+    background-color: rgba(244, 71, 107, 0.3);
 }
 
 .wrapper .main-container .container {

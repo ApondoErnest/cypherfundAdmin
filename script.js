@@ -19,3 +19,13 @@ function openContent(evt, content) {
   
   // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultSelect").click();  
+
+
+//Togle and close side menu on small screens
+document.getElementById('showMenu').addEventListener('click', () => {
+  document.querySelector('.wrapper .sidebar').style.left = '0';
+});
+
+document.getElementById('hideMenu').addEventListener('click', () => {
+  document.querySelector('.wrapper .sidebar').style.left = '-225px';
+});

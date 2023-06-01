@@ -22,10 +22,17 @@ document.getElementById("defaultSelect").click();
 
 let logoutTop = document.querySelector('.fa-user');
 
-logoutTop.addEventListener('mouseover', () => {
+/*logoutTop.addEventListener('mouseover', () => {
     document.querySelector('.wrapper .main-container .top_navbar .hamburger a:nth-child(2)').style.display = 'block';
 });
 
 logoutTop.addEventListener('mouseleave', () => {
     document.querySelector('.wrapper .main-container .top_navbar .hamburger a:nth-child(2)').style.display = 'none';
-});
+});*/
+
+logoutTop.addEventListener('onclick',update());
+function update(){
+  const User =prompt("enter your name");
+  
+
+}
